@@ -1,0 +1,5 @@
+# only needed on your computer for the test files (not on the server)
+-r requirements.txt
+pytest
+mongomock
+requests

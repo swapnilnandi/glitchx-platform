@@ -1,0 +1,83 @@
+# secrets - never upload these
+.env
+.env.*
+!.env.example
+
+# python  (venv*/ also covers venv_clean/, venv_new/ ...)
+venv*/
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# node
+node_modules/
+dist/
+
+# local data, results and temp files
+chroma_db/
+metrics_result.json
+temp_*
+*.log
+
+# editors / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+# private user data and uploads
+uploads/
+recordings/
+resumes/
+reports/
+*.wav
+*.mp3
+*.mp4
+
+# databases and backups
+*.sqlite3
+*.db
+*.dump
+*.bak
+
+# frontend environment files
+.env.local
+.env.development.local
+.env.production.local
+
+# ==============================
+# BACKEND TEST FILES
+# ==============================
+
+backend/test_*.py
+backend/*_test.py
+backend/tests/
+
+backend/run_all_tests.py
+backend/run_capacity_test.py
+backend/run_server_fake_ai.py
+backend/smoke_check.py
+backend/verify_platform.py
+backend/final_e2e_check.py
+backend/measure_metrics.py
+backend/check_gemini_speed.py
+backend/check_locks.py
+backend/check_models.py
+
+# Individual test files
+backend/test.mp3
+
+# Generated test results and reports
+backend/result.txt
+backend/metrics_result.json
+backend/question_quality_report.json
+backend/*test*.json
+backend/*test*.txt
+
+# ==============================
+# FRONTEND TEST FILES
+# ==============================
+
+frontend/tests/
+frontend/test-results/
+frontend/coverage/
